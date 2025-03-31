@@ -28,7 +28,7 @@ import {
   MdOutlineRemoveRedEye,
   MdOutlinePayment,
 } from "react-icons/md";
-import { PiDotDuotone, PiDotOutlineFill } from "react-icons/pi";
+import { PiDotOutlineFill } from "react-icons/pi";
 import AllCollection from "./AllCollection";
 import CartDetails from "./CartDetails";
 import ViewDetails from "./ViewDetails";
@@ -38,17 +38,6 @@ import "aos/dist/aos.css";
 import { Tooltip } from "@mui/material";
 
 function Home() {
-  // const customModalStyles = {
-  //   overlay: { backgroundColor: "rgba(0, 0, 0, 0.6)" },
-  //   content: {
-  //     maxWidth: "600px",
-  //     margin: "auto",
-  //     padding: "20px",
-  //     borderRadius: "10px",
-  //     maxHeight: "500px",
-  //   },
-  // };
-
   // categories api call
   const [categories, setCategories] = useState([]);
   useEffect(() => {
@@ -137,6 +126,7 @@ function Home() {
   return (
     <>
       <div>
+        {/* Hero Section */}
         <div className="">
           <div className="herosection">
             <Swiper
@@ -423,71 +413,52 @@ function Home() {
               modules={[Navigation, Pagination]}
               className="mySwiper"
             >
-              <SwiperSlide>
+              <SwiperSlide className="relative">
                 <img
                   src="./src/assets/lookbook-3.jpg"
                   alt="Lookbook 3"
-                  className="w-full h-auto absolute"
+                  className="w-full h-auto"
                 />
-
                 <Tooltip
                   arrow
                   placement="top"
                   title={
                     <div className="bg-white text-black p-2 flex items-center gap-3">
-                      {/* Product Image */}
                       <img
                         src="./src/assets/brown.jpg"
                         alt="Product"
                         className="w-12 h-16"
                       />
-
-                      {/* Product Details */}
                       <div className="flex flex-col">
                         <span className="text-sm font-semibold">
                           Ribbed modal T-shirt
                         </span>
                         <span className="text-md font-bold">$20.00</span>
                       </div>
-
-                      {/* Eye Icon */}
                       <div className="bg-[#ebebeb] rounded-full">
                         <MdOutlineRemoveRedEye className="w-9 h-9 p-1" />
                       </div>
                     </div>
                   }
-                  sx={{
-                    "& .MuiTooltip-tooltip": {
-                      backgroundColor: "white !important",
-                      color: "black",
-                      borderRadius: "8px",
-                      padding: "10px",
-                      boxShadow: "0px 4px 10px rgba(0,0,0,0.15)",
-                      maxWidth: "200px",
-                    },
-                    "& .MuiTooltip-arrow": {
-                      color: "white",
-                    },
-                  }}
                 >
-                  {/* Dot Icon Trigger */}
                   <GoDotFill
-                    className="relative cursor-pointer"
+                    className="absolute cursor-pointer"
                     style={{
-                      left: "250px",
-                      top: "250px",
+                      left: "48%",
+                      top: "65%",
+                      transform: "translate(-50%, -50%)",
                       background: "white",
                       borderRadius: "100%",
                       padding: "4px",
                     }}
                   />
                 </Tooltip>
-
                 <GoDotFill
-                  className="relative"
+                  className="absolute"
                   style={{
-                    left: "350px",
-                    top: "350px",
+                    left: "62%",
+                    top: "87%",
+                    transform: "translate(-50%, -50%)",
                     background: "white",
                     borderRadius: "100%",
                     padding: "4px",
@@ -495,19 +466,20 @@ function Home() {
                 />
               </SwiperSlide>
 
-              <SwiperSlide>
+              <SwiperSlide className="relative">
                 <img
                   src="./src/assets/lookbook-4.jpg"
                   alt="Lookbook 4"
-                  className="w-full h-auto relative"
+                  className="w-full h-auto"
                 />
                 <PiDotOutlineFill
-                  className=" absolute"
+                  className="absolute"
                   style={{
-                    left: "350px",
-                    top: "90px",
+                    left: "60%",
+                    top: "20%",
                     width: "20px",
                     height: "20px",
+                    transform: "translate(-50%, -50%)",
                   }}
                 />
               </SwiperSlide>
@@ -751,7 +723,11 @@ function Home() {
                   </p>
                   <p>Email: info@fashionshop.com</p>
                   <p>Phone: (212) 555-1234</p>
-                  <Link to="#" className="flex items-center text-blue-500 mt-2">
+                  <Link
+                    to="https://maps.windows.com/?form=WNAMSH&entity=local_vdpid%3A5487505297524129794&collection=point.40.713047_-74.007233_New%20York%2C%20New%20York%2C%20United%20States"
+                    className="flex items-center text-blue-500 mt-2"
+                    target="_blank"
+                  >
                     Get directions <LuArrowUpRight />
                   </Link>
                   <div className="flex gap-3 mt-4">

@@ -3,6 +3,7 @@ import { Dialog, DialogTitle, DialogContent, IconButton } from "@mui/material";
 import { FaCircle, FaRegHeart, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { MdCompareArrows } from "react-icons/md";
+import { BsLightningChargeFill } from "react-icons/bs";
 
 const ViewDetails = ({ open, onClose }) => {
   const [selectedColor, setSelectedColor] = useState(null);
@@ -61,17 +62,15 @@ const ViewDetails = ({ open, onClose }) => {
 
             <div>
               <h3>Ribbed Tank Top</h3>
-              <div className="flex gap-2 items-center mt-4 viewdetailsdialogbutton">
+              <div className="flex gap-1 items-center mt-4 viewdetailsdialogbutton">
                 <button
                   className="uppercase border-1 p-1 w-24"
                   style={{ borderRadius: "3px" }}
                 >
                   Best Seller
                 </button>
-                <p
-                  className="pb-0"
-                  style={{ alignSelf: "center", paddingBottom: "0px" }}
-                >
+                {/* <BsLightningChargeFill /> */}
+                <p className="mb-0 items-center">
                   Selling fast! 48 people have this in their carts.
                 </p>
               </div>

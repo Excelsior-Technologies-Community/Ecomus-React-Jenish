@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Dialog,
   DialogTitle,
@@ -12,6 +12,8 @@ import {
 import { FaTimes } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Login = ({ open, onClose, onRegisterClick, onForgotPasswordClick }) => {
   const navigate = useNavigate();
@@ -46,8 +48,19 @@ const Login = ({ open, onClose, onRegisterClick, onForgotPasswordClick }) => {
     }
   };
 
+  // Animation
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
+    <Dialog
+      open={open}
+      onClose={onClose}
+      maxWidth="sm"
+      fullWidth
+      data-aos="zoom-out"
+    >
       <DialogTitle>
         Log in
         <IconButton

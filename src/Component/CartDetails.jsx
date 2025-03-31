@@ -23,22 +23,22 @@ const CartDetails = ({ open, onClose }) => {
       onClose={onClose}
       fullWidth
       sx={{
-        maxWidth: "520px",
-        width: "100%",
-        height: "100vh",
-        maxHeight: "100vh",
-        margin: "auto",
+        "& .MuiDialog-paper": {
+          maxWidth: "520px",
+          width: "100%",
+          height: "100vh",
+          maxHeight: "100vh",
+          margin: "auto",
+        },
       }}
     >
-      <DialogTitle>
+      <DialogContent className="overflow-y-auto max-h-[100%] px-4">
         <IconButton
           onClick={onClose}
           style={{ position: "absolute", top: 10, right: 10 }}
         >
           <FaTimes />
         </IconButton>
-      </DialogTitle>
-      <DialogContent className="overflow-y-auto max-h-[100%] px-4">
         {/* Product Info */}
         <div className="flex flex-row items-center py-3 gap-3">
           <img

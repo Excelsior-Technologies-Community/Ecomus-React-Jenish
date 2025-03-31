@@ -13,6 +13,8 @@ import {
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AllCollection = ({ open, onClose }) => {
   const [data, setData] = useState([]);
@@ -41,6 +43,11 @@ const AllCollection = ({ open, onClose }) => {
     setExpanded(expanded === id ? null : id);
   };
 
+  // Animation
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <Dialog
       open={open}
@@ -57,6 +64,7 @@ const AllCollection = ({ open, onClose }) => {
           width: "400px",
         },
       }}
+      // data-aos="fade-right"
     >
       <DialogTitle className="py-4">
         <IconButton

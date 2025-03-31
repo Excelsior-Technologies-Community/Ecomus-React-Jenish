@@ -23,7 +23,7 @@ function ShoppingCart({ open, onClose }) {
             margin: 0,
             height: "100vh",
             maxHeight: "100vh",
-            // width: "500px",
+            width: "400px",
           },
         }}
       >
