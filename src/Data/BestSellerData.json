@@ -1,0 +1,109 @@
+{
+    "bestseller":[
+        {
+            "id": 1,
+            "image":"./src/assets/orange-1.jpg",
+            "name":"Ribbed Tank Top",
+            "price":"$16.95",
+            "color":[
+                "orange",
+                "black"
+            ],
+            "sizes":[
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "id": 2,
+            "image":"./src/assets/brown.jpg",
+            "name":"Ribbed Tank Top",
+            "price":"$16.95",
+            "color":[
+                "orange",
+                "black"
+            ],
+            "sizes":[
+                "M",
+                "L",
+                "XL"
+            ],
+            "discount_timer": {
+                "end_date": "2025-03-15T23:59:59Z"
+            }
+        },
+        {
+            "id": 3,
+            "image":"./src/assets/white-3.jpg",
+            "name":"Ribbed Tank Top",
+            "price":"$16.95",
+            "color":[
+                "orange",
+                "black"
+            ],
+            "sizes":[
+                "XL"
+            ]
+        },
+        {
+            "id": 4,
+            "image":"./src/assets/white-2.jpg",
+            "name":"Ribbed Tank Top",
+            "price":"$16.95",
+            "color":[
+                "orange",
+                "black"
+            ]
+        },
+        {
+            "id": 5,
+            "image":"./src/assets/brown-2.jpg",
+            "name":"Ribbed Tank Top",
+            "price":"$16.95",
+            "color":[
+                "orange",
+                "black"
+            ]
+        },
+        {
+            "id": 6,
+            "image":"./src/assets/light-green-1.jpg",
+            "name":"Ribbed Tank Top",
+            "price":"$16.95",
+            "color":[
+                "orange",
+                "black"
+            ],
+            "sizes":[
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "id": 7,
+            "image":"./src/assets/black-4.jpg",
+            "name":"Ribbed Tank Top",
+            "price":"$16.95",
+            "color":[
+                "orange",
+                "black"
+            ]
+        },
+        {
+            "id": 8,
+            "image":"./src/assets/white-8.jpg",
+            "name":"Ribbed Tank Top",
+            "price":"$16.95",
+            "color":[
+                "orange",
+                "black"
+            ],
+            "sizes":[
+                "M",
+                "L"
+            ]
+        }
+    ]
+}

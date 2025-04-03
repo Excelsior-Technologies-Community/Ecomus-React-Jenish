@@ -1,0 +1,194 @@
+{
+  "bestseller": [
+    {
+      "id": 1,
+      "image": "./src/assets/orange-1.jpg",
+      "name": "Ribbed Tank Top",
+      "price": "$16.95",
+      "color": ["orange", "black"],
+      "sizes": ["M", "L", "XL"]
+    },
+    {
+      "id": 2,
+      "image": "./src/assets/brown.jpg",
+      "name": "Ribbed Tank Top",
+      "price": "$16.95",
+      "color": ["orange", "black"],
+      "sizes": ["M", "L", "XL"],
+      "discount_timer": {
+        "end_date": "2025-03-15T23:59:59Z"
+      }
+    },
+    {
+      "id": 3,
+      "image": "./src/assets/white-3.jpg",
+      "name": "Ribbed Tank Top",
+      "price": "$16.95",
+      "color": ["orange", "black"],
+      "sizes": ["XL"]
+    },
+    {
+      "id": 4,
+      "image": "./src/assets/white-2.jpg",
+      "name": "Ribbed Tank Top",
+      "price": "$16.95",
+      "color": ["orange", "black"]
+    },
+    {
+      "id": 5,
+      "image": "./src/assets/brown-2.jpg",
+      "name": "Ribbed Tank Top",
+      "price": "$16.95",
+      "color": ["orange", "black"]
+    },
+    {
+      "id": 6,
+      "image": "./src/assets/light-green-1.jpg",
+      "name": "Ribbed Tank Top",
+      "price": "$16.95",
+      "color": ["orange", "black"],
+      "sizes": ["M", "L", "XL"]
+    },
+    {
+      "id": 7,
+      "image": "./src/assets/black-4.jpg",
+      "name": "Ribbed Tank Top",
+      "price": "$16.95",
+      "color": ["orange", "black"]
+    },
+    {
+      "id": 8,
+      "image": "./src/assets/white-8.jpg",
+      "name": "Ribbed Tank Top",
+      "price": "$16.95",
+      "color": ["orange", "black"],
+      "sizes": ["M", "L"]
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "image": "./src/assets/collection-17.jpg",
+      "categories": "clothing",
+      "title": "dhfh"
+    },
+    {
+      "id": 2,
+      "image": "./src/assets/collection-14.jpg",
+      "categories": "sunglasses",
+      "title": "dhfh"
+    },
+    {
+      "id": 3,
+      "image": "./src/assets/collection-18.jpg",
+      "categories": "bags",
+      "title": "dhfh"
+    },
+    {
+      "id": 4,
+      "image": "./src/assets/collection-18.jpg",
+      "categories": "bags",
+      "title": "dhfh"
+    }
+  ],
+
+  "happyclient": [
+    {
+      "id": 1,
+      "title": "Best Online Fashion Site",
+      "text": "I always find something stylish and affordable on this web fashion site.",
+      "name": "Robert Smith",
+      "location": "Customer from USA",
+      "image": "src/assets/img-p2.png",
+      "product": "Jersey Thong Body",
+      "price": "105.95",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "title": "Great Selection & Quality",
+      "text": "I love the variety of styles and high-quality clothing on this website.",
+      "name": "Allen Lyn",
+      "location": "Customer from France",
+      "image": "src/assets/img-p3.png",
+      "product": "Cotton Jersey Top",
+      "price": "7.95",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "title": "Best Customer Service",
+      "text": "Finally found a fashion si stylish and flattering options in my size.",
+      "name": "Petar Rope",
+      "location": "Customer from USA",
+      "image": "src/assets/img-p4.png",
+      "product": "Ribbed Modal T-shirt",
+      "price": "18.95",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "title": "Best Customer Service",
+      "text": "Finally found a fashion si stylish and flattering options in my size.",
+      "name": "Petar Rope",
+      "location": "Customer from USA",
+      "image": "src/assets/img-p4.png",
+      "product": "Ribbed Modal T-shirt",
+      "price": "18.95",
+      "rating": 5
+    }
+  ],
+
+  "collection":[
+    {
+      "id":1,
+      "image":"./src/assets/cate1.jpg",
+      "name":"Accessories"
+    },
+    {
+      "id":2,
+      "image":"./src/assets/cate2.jpg",
+      "name":"Dog"
+    },
+    {
+      "id":3,
+      "image":"./src/assets/cate3.jpg",
+      "name":"Grocery"
+    },
+    {
+      "id":4,
+      "image":"./src/assets/cate4.png",
+      "name":"Handbag"
+    },
+
+    {
+      "id":5,
+      "image":"./src/assets/cate5.jpg",
+      "name":"Fashion",
+      "description":"gdhgkjSDGksdj"
+    },
+    {
+      "id":6,
+      "image":"./src/assets/cate6.jpg",
+      "name":"Men",
+      "description":"gdhgkjSDGksdj"
+    },
+    {
+      "id":7,
+      "image":"./src/assets/cate7.jpg",
+      "name":"Tee"
+    },
+    {
+      "id":7,
+      "image":"./src/assets/cate8.jpg",
+      "name":"Shoes"
+    },
+    {
+      "id":7,
+      "image":"./src/assets/cate9.jpg",
+      "name":"Women",
+      "description":"gdhgkjSDGksdj"
+    }
+  ]
+}

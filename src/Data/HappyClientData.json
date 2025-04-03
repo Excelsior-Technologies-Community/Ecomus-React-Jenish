@@ -1,0 +1,48 @@
+{
+    "happyclient":[
+        {
+            "id":1,
+            "title": "Best Online Fashion Site",
+            "text": "I always find something stylish and affordable on this web fashion site.",
+            "name": "Robert Smith",
+            "location": "Customer from USA",
+            "image": "src/assets/img-p2.png",
+            "product": "Jersey Thong Body",
+            "price": "105.95",
+            "rating": 5
+        },
+        {
+            "id":2,
+            "title": "Great Selection & Quality",
+            "text": "I love the variety of styles and high-quality clothing on this website.",
+            "name": "Allen Lyn",
+            "location": "Customer from France",
+            "image": "src/assets/img-p3.png",
+            "product": "Cotton Jersey Top",
+            "price": "7.95",
+            "rating": 5
+        },
+        {
+            "id":3,
+            "title": "Best Customer Service",
+            "text": "Finally found a fashion si stylish and flattering options in my size.",
+            "name": "Petar Rope",
+            "location": "Customer from USA",
+            "image": "src/assets/img-p4.png",
+            "product": "Ribbed Modal T-shirt",
+            "price": "18.95",
+            "rating": 5
+        },
+        {
+            "id":4,
+            "title": "Best Customer Service",
+            "text": "Finally found a fashion si stylish and flattering options in my size.",
+            "name": "Petar Rope",
+            "location": "Customer from USA",
+            "image": "src/assets/img-p4.png",
+            "product": "Ribbed Modal T-shirt",
+            "price": "18.95",
+            "rating": 5
+        }
+    ]
+}
