@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { MdCompareArrows } from "react-icons/md";
 import { BsLightningChargeFill } from "react-icons/bs";
 
-const ViewDetails = ({ open, onClose }) => {
+const ViewDetails = ({ open, onClose, product }) => {
   const [selectedColor, setSelectedColor] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
 
@@ -18,6 +18,7 @@ const ViewDetails = ({ open, onClose }) => {
   const sizes = ["S", "M", "L", "XL"];
 
   const [count, setCount] = useState(1);
+  if (!open || !product) return null;
 
   return (
     <Dialog
@@ -31,16 +32,15 @@ const ViewDetails = ({ open, onClose }) => {
         maxWidth: "1040px",
         justifySelf: "center",
       }}
+      BackdropProps={{
+        style: { backgroundColor: "rgba(0, 0, 0, 0.3)" },
+      }}
     >
       <DialogContent sx={{ height: "100vh", padding: 0 }}>
         <div className="grid grid-cols-2 h-full viewdetailsdialogcontent">
           {/* Left Side (Image) */}
           <div className="overflow-auto h-full">
-            <img
-              src="./src/assets/pink-1.jpg"
-              alt="Product"
-              className="w-full h-full "
-            />
+            <img src={product.image} alt="Product" className="w-full h-full " />
           </div>
 
           {/* Right Side (Content) */}
@@ -61,7 +61,7 @@ const ViewDetails = ({ open, onClose }) => {
             </DialogTitle>
 
             <div>
-              <h3>Ribbed Tank Top</h3>
+              <h3>{product.name}</h3>
               <div className="flex gap-1 items-center mt-4 viewdetailsdialogbutton">
                 <button
                   className="uppercase border-1 p-1 w-24"
@@ -74,7 +74,7 @@ const ViewDetails = ({ open, onClose }) => {
                   Selling fast! 48 people have this in their carts.
                 </p>
               </div>
-              <h2 className="mt-3">$18.00</h2>
+              <h2 className="mt-3">{product.price}</h2>
               <p className="mt-4">
                 Do esse non non id nostrud consequat cillum. Labore do excepteur
                 cupidatat enim excepteur laboris nisi.

@@ -15,6 +15,9 @@ const DoNotMisOut = ({ open, onClose }) => {
         maxWidth: "1040px",
         justifySelf: "center",
       }}
+      BackdropProps={{
+        style: { backgroundColor: "rgba(0, 0, 0, 0.3)" },
+      }}
     >
       <div>
         <IconButton

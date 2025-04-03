@@ -26,6 +26,9 @@ function ShoppingCart({ open, onClose }) {
             width: "400px",
           },
         }}
+        BackdropProps={{
+          style: { backgroundColor: "rgba(0, 0, 0, 0.3)" },
+        }}
       >
         <DialogTitle sx={{ padding: "0px" }} className="px-4">
           <div className="font-bold mt-2">Shopping Cart</div>
